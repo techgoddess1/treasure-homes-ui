@@ -7,7 +7,7 @@ import { PropertyCard } from '../components/PropertyCard';
 export class About extends Component {
   render() {
     return (
-      <div>
+      <div className='p-col-12'>
         <header className='p-grid' style={{ height: '600px' }}>
           <div className='p-col-12'>
             <nav style={{ fontSize: '14px' }} className=''>
@@ -51,8 +51,8 @@ export class About extends Component {
               </ul>
             </nav>
 
-            <div>
-              <img src='./assets/images/family.png' alt='' />
+            <div style={{ width: '100%' }}>
+              <img style={{ width: '100%' }} src='./assets/images/family.png' alt='' />
             </div>
 
             <div className='p-grid p-col-12' style={{ marginTop: '-450px' }}>
@@ -139,7 +139,9 @@ export class About extends Component {
         </div>
 
         <footer>
-          <img src='./assets/images/Rectangle.png' alt='' />
+          <div style={{ width: '100%' }}>
+            <img style={{ width: '100%' }} src='./assets/images/Rectangle.png' alt='' />
+          </div>
           <div className='p-grid p-justify-end'>
             <nav
               className='p-col-6'

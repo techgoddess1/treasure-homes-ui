@@ -14,7 +14,7 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <div className='app'>
+        <div className='p-grid'>
           <Switch>
             <Route exact path='/'>
               <Landing />

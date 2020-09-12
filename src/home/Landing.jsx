@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { InputText } from 'primereact/inputtext';
 import { Button } from 'primereact/button';
 import { PropertyCard } from '../components/PropertyCard';
+import './landing.css';
 
 export class Landing extends Component {
   constructor() {
@@ -20,52 +21,37 @@ export class Landing extends Component {
   onSearchClick(event) {}
   render() {
     return (
-      <div>
+      <div className='p-col-12'>
         <header className='p-grid' style={{ height: '1040px' }}>
-          <div className='p-col-12'>
-            <div>
-              <img src='./assets/images/Intersect.png' alt='' />
-            </div>
-            <nav style={{ marginTop: '-1000px', fontSize: '14px' }} className=''>
-              <ul className='p-grid p-text-center' style={{ listStyle: 'none' }}>
-                <li className='p-col'>
+          <div className='p-col-12 p-col-m-12 p-col-s-12'>
+            <div className='bg-img'>
+              {/* <img style={{ width: '100%' }} src='./assets/images/Intersect.png' alt='' /> */}
+              <div className='container'>
+                <div className='topnav'>
                   <Link style={{ textDecoration: 'none', color: 'white' }} to='/'>
                     HOME
                   </Link>
-                </li>
-                <li className='p-col'>
                   <Link style={{ textDecoration: 'none', color: 'white' }} to='#'>
                     HOW IT WORKS
                   </Link>
-                </li>
-                <li className='p-col'>
                   <Link style={{ textDecoration: 'none', color: 'white' }} to='#'>
                     FEATURES
                   </Link>
-                </li>
-                <li className='p-col'>
                   <Link style={{ textDecoration: 'none', color: 'white' }} to='/about'>
                     ABOUT
                   </Link>
-                </li>
-
-                <li className='p-col'>
                   <Link style={{ textDecoration: 'none', color: 'white' }} to='#'>
                     MAKE A PAYMENT
                   </Link>
-                </li>
-                <li className='p-col'>
                   <Link style={{ textDecoration: 'none', color: 'white' }} to='/signin'>
                     SIGNIN
                   </Link>
-                </li>
-                <li className='p-col'>
                   <Link className='' style={{ textDecoration: 'none', color: 'white' }} to='#'>
                     REGISTER
                   </Link>
-                </li>
-              </ul>
-            </nav>
+                </div>
+              </div>
+            </div>
 
             <div className='p-grid p-col-12' style={{ marginTop: '150px' }}>
               <div
@@ -243,7 +229,9 @@ export class Landing extends Component {
         </div>
 
         <footer>
-          <img src='./assets/images/Rectangle.png' alt='' />
+          <div style={{ width: '100%' }}>
+            <img style={{ width: '100%' }} src='./assets/images/Rectangle.png' alt='' />
+          </div>
           <div className='p-grid p-justify-end'>
             <nav className='p-col-6' style={{ marginTop: '-200px', fontSize: '13px' }}>
               <ul className='p-grid' style={{ listStyle: 'none', textAlign: 'right' }}>
